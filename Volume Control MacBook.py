@@ -6,8 +6,7 @@ from like import volume_up,volume_down
 mp_hands=mp.solutions.hands
 hands=mp_hands.Hands()
 mp_draw=mp.solutions.drawing_utils
-cap=cv2.VideoCapture(0)
-
+cap=cv2.VideoCapture(1)
 #define the tips index
 finger_tips=[8,12,16,20]
 thumb_tip=4

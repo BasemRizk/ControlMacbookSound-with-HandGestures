@@ -2,6 +2,7 @@ import time
 import cv2
 import applescript
 
+#Check if the thumbs up stays for 1 sec perform the applescript
 def volume_up(thumbs_up, volume_start_time, img):
     if not thumbs_up:
         volume_start_time = time.time()
@@ -11,6 +12,7 @@ def volume_up(thumbs_up, volume_start_time, img):
         applescript.run('set volume output volume (output volume of (get volume settings) + 10)')
         volume_start_time = time.time()
     return thumbs_up, volume_start_time
+#Check if the thumbs down stays for 1 sec perform the applescript
 def volume_down(thumbs_down, volume_start_time, img):
     if not thumbs_down:
         volume_start_time = time.time()
